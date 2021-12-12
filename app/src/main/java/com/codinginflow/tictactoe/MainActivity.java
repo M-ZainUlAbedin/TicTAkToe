@@ -117,3 +117,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         return false;
     }
+
+    private void player1Wins() {
+        player1Points++;
+        Toast.makeText(this, "Player 1 wins!", Toast.LENGTH_SHORT).show();
+        updatePointsText();
+        resetBoard();
+    }
+
+    private void player2Wins() {
+        player2Points++;
+        Toast.makeText(this, "Player 2 wins!", Toast.LENGTH_SHORT).show();
+        updatePointsText();
+        resetBoard();
+    }
